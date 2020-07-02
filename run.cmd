@@ -1,13 +1,11 @@
-cd data
-python .\split_files.py
-cd ..
-
 python run_language_modeling.py ^
     --output_dir=output ^
     --model_type=reformer ^
-    --tokenizer_name=google/reformer-crime-and-punishment ^
+    --config_name=protein_reformer ^
+    --tokenizer_name=protein_reformer ^
     --line_by_line ^
     --do_train ^
-    --train_data_file=./data/wikitext2/wiki.train.raw ^
+    --train_data_file=data\yeast\yeast_train.txt ^
     --do_eval ^
-    --eval_data_file=./data/wikitext2/wiki.test.raw
+    --eval_data_file=data\yeast\yeast_val.txt ^
+    --block_size 4608 
