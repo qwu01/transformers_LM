@@ -30,7 +30,7 @@ do_train:
   value: true
 evaluate_during_training:
   desc: null
-  value: false
+  value: true
 fp16:
   desc: null
   value: false
@@ -48,13 +48,13 @@ local_rank:
   value: -1
 logging_dir:
   desc: null
-  value: runs\Jul03_11-37-31_DESKTOP-5199BCT
+  value: runs\Jul03_16-20-39_DESKTOP-5199BCT
 logging_first_step:
   desc: null
   value: false
 logging_steps:
   desc: null
-  value: 500
+  value: 10
 max_grad_norm:
   desc: null
   value: 1.0
@@ -66,7 +66,7 @@ no_cuda:
   value: false
 num_train_epochs:
   desc: null
-  value: 3.0
+  value: 1.0
 output_dir:
   desc: null
   value: output

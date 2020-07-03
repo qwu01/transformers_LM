@@ -3,10 +3,10 @@
     "program": "run_language_modeling.py",
     "git": {
         "remote": "https://github.com/qwu01/transformers_LM.git",
-        "commit": "7d07df5b7cb73e89a3fa396c3101a229b4656b3b"
+        "commit": "a1ec3348f40f6b347fb80f213f61f7b68e17377a"
     },
     "email": "45884870+qwu01@users.noreply.github.com",
-    "startedAt": "2020-07-03T15:37:37.932070",
+    "startedAt": "2020-07-03T20:20:46.804506",
     "host": "DESKTOP-5199BCT",
     "username": "wuqi0",
     "executable": "C:\\Users\\wuqi0\\Documents\\GitHub\\transformers_LM\\.VENV\\Scripts\\python.exe",
@@ -21,16 +21,21 @@
         "--line_by_line",
         "--do_train",
         "--train_data_file=data\\yeast\\yeast_train.txt",
+        "--num_train_epochs",
+        "1",
         "--do_eval",
         "--eval_data_file=data\\yeast\\yeast_val.txt",
+        "--evaluate_during_training",
+        "--logging_steps",
+        "10",
         "--block_size",
         "4608",
         "--overwrite_output_dir"
     ],
-    "state": "finished",
+    "state": "killed",
     "jobType": null,
     "mode": "run",
     "project": "huggingface",
-    "heartbeatAt": "2020-07-03T15:49:20.431569",
-    "exitcode": 0
+    "heartbeatAt": "2020-07-03T20:26:27.937506",
+    "exitcode": 255
 }
