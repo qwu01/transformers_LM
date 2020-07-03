@@ -12,4 +12,4 @@ with codecs.open(input_file_name, 'r', encoding='utf-8', errors='ignore') as f:
 
 with open(output_file_name, "w", encoding='utf-8') as file:
     for s in output_list:
-        file.write("%s\n" % s)
+        file.write("%s\n" % s.lower())
