@@ -1,1 +1,1 @@
-{"eos_token": "</s>", "unk_token": "<unk>", "pad_token": "<pad>", "additional_special_tokens": [], "do_lower_case": true, "special_tokens_map_file": "protein_reformer\\special_tokens_map.json", "full_tokenizer_file": null}
+{"eos_token": "</s>", "unk_token": "<unk>", "pad_token": "<pad>", "additional_special_tokens": [], "do_lower_case": false, "special_tokens_map_file": "protein_reformer\\special_tokens_map.json", "full_tokenizer_file": null}

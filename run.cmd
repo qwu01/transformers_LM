@@ -6,6 +6,10 @@ python run_language_modeling.py ^
     --line_by_line ^
     --do_train ^
     --train_data_file=data\yeast\yeast_train.txt ^
+    --num_train_epochs 1 ^
     --do_eval ^
     --eval_data_file=data\yeast\yeast_val.txt ^
-    --block_size 4608 
+    --evaluate_during_training ^
+    --logging_steps 100 ^
+    --block_size 4608 ^
+    --overwrite_output_dir

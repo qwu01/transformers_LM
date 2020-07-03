@@ -1,0 +1,109 @@
+optional arguments:
+  -h, --help            show this help message and exit
+  --model_name_or_path MODEL_NAME_OR_PATH
+                        The model checkpoint for weights initialization. Leave
+                        None if you want to train a model from scratch.
+  --model_type MODEL_TYPE
+                        If training from scratch, pass a model type from the
+                        list: t5, distilbert, albert, camembert, xlm-roberta,
+                        marian, bart, longformer, roberta, bert, openai-gpt,
+                        gpt2, mobilebert, transfo-xl, xlnet, flaubert, xlm,
+                        ctrl, electra, encoder_decoder, reformer
+  --config_name CONFIG_NAME
+                        Pretrained config name or path if not the same as
+                        model_name
+  --tokenizer_name TOKENIZER_NAME
+                        Pretrained tokenizer name or path if not the same as
+                        model_name
+  --cache_dir CACHE_DIR
+                        Where do you want to store the pretrained models
+                        downloaded from s3
+  --train_data_file TRAIN_DATA_FILE
+                        The input training data file (a text file).
+  --eval_data_file EVAL_DATA_FILE
+                        An optional input evaluation data file to evaluate the
+                        perplexity on (a text file).
+  --line_by_line        Whether distinct lines of text in the dataset are to
+                        be handled as distinct sequences.
+  --mlm                 Train with masked-language modeling loss instead of
+                        language modeling.
+  --mlm_probability MLM_PROBABILITY
+                        Ratio of tokens to mask for masked language modeling
+                        loss
+  --block_size BLOCK_SIZE
+                        Optional input sequence length after tokenization.The
+                        training dataset will be truncated in block of this
+                        size for training.Default to the model max input
+                        length for single sentence inputs (take into account
+                        special tokens).
+  --overwrite_cache     Overwrite the cached training and evaluation sets
+  --output_dir OUTPUT_DIR
+                        The output directory where the model predictions and
+                        checkpoints will be written.
+  --overwrite_output_dir
+                        Overwrite the content of the output directory.Use this
+                        to continue training if output_dir points to a
+                        checkpoint directory.
+  --do_train            Whether to run training.
+  --do_eval             Whether to run eval on the dev set.
+  --do_predict          Whether to run predictions on the test set.
+  --evaluate_during_training
+                        Run evaluation during training at each logging step.
+  --per_device_train_batch_size PER_DEVICE_TRAIN_BATCH_SIZE
+                        Batch size per GPU/TPU core/CPU for training.
+  --per_device_eval_batch_size PER_DEVICE_EVAL_BATCH_SIZE
+                        Batch size per GPU/TPU core/CPU for evaluation.
+  --per_gpu_train_batch_size PER_GPU_TRAIN_BATCH_SIZE
+                        Deprecated, the use of `--per_device_train_batch_size`
+                        is preferred. Batch size per GPU/TPU core/CPU for
+                        training.
+  --per_gpu_eval_batch_size PER_GPU_EVAL_BATCH_SIZE
+                        Deprecated, the use of `--per_device_eval_batch_size`
+                        is preferred.Batch size per GPU/TPU core/CPU for
+                        evaluation.
+  --gradient_accumulation_steps GRADIENT_ACCUMULATION_STEPS
+                        Number of updates steps to accumulate before
+                        performing a backward/update pass.
+  --learning_rate LEARNING_RATE
+                        The initial learning rate for Adam.
+  --weight_decay WEIGHT_DECAY
+                        Weight decay if we apply some.
+  --adam_epsilon ADAM_EPSILON
+                        Epsilon for Adam optimizer.
+  --max_grad_norm MAX_GRAD_NORM
+                        Max gradient norm.
+  --num_train_epochs NUM_TRAIN_EPOCHS
+                        Total number of training epochs to perform.
+  --max_steps MAX_STEPS
+                        If > 0: set total number of training steps to perform.
+                        Override num_train_epochs.
+  --warmup_steps WARMUP_STEPS
+                        Linear warmup over warmup_steps.
+  --logging_dir LOGGING_DIR
+                        Tensorboard log dir.
+  --logging_first_step  Log and eval the first global_step
+  --logging_steps LOGGING_STEPS
+                        Log every X updates steps.
+  --save_steps SAVE_STEPS
+                        Save checkpoint every X updates steps.
+  --save_total_limit SAVE_TOTAL_LIMIT
+                        Limit the total amount of checkpoints.Deletes the
+                        older checkpoints in the output_dir. Default is
+                        unlimited checkpoints
+  --no_cuda             Do not use CUDA even when it is available
+  --seed SEED           random seed for initialization
+  --fp16                Whether to use 16-bit (mixed) precision (through
+                        NVIDIA apex) instead of 32-bit
+  --fp16_opt_level FP16_OPT_LEVEL
+                        For fp16: Apex AMP optimization level selected in
+                        ['O0', 'O1', 'O2', and 'O3'].See details at
+                        https://nvidia.github.io/apex/amp.html
+  --local_rank LOCAL_RANK
+                        For distributed training: local_rank
+  --tpu_num_cores TPU_NUM_CORES
+                        TPU: Number of TPU cores (automatically passed by
+                        launcher script)
+  --tpu_metrics_debug   TPU: Whether to print debug metrics
+  --dataloader_drop_last
+                        Drop the last incomplete batch if it is not divisible
+                        by the batch size.
