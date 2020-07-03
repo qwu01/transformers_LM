@@ -1,0 +1,40 @@
+{
+    "root": "C:/Users/wuqi0/Documents/GitHub/transformers_LM",
+    "program": "run_language_modeling.py",
+    "git": {
+        "remote": "https://github.com/qwu01/transformers_LM.git",
+        "commit": "ded1631ff485e2a147847516cca5276affae9de0"
+    },
+    "email": "45884870+qwu01@users.noreply.github.com",
+    "startedAt": "2020-07-03T20:56:04.632646",
+    "host": "DESKTOP-5199BCT",
+    "username": "wuqi0",
+    "executable": "C:\\Users\\wuqi0\\Documents\\GitHub\\transformers_LM\\.VENV\\Scripts\\python.exe",
+    "os": "Windows-10-10.0.18362-SP0",
+    "python": "3.7.7",
+    "cpu_count": 12,
+    "args": [
+        "--output_dir=output",
+        "--model_type=reformer",
+        "--config_name=protein_reformer",
+        "--tokenizer_name=protein_reformer",
+        "--line_by_line",
+        "--do_train",
+        "--train_data_file=data\\yeast\\yeast_train.txt",
+        "--num_train_epochs",
+        "100",
+        "--do_eval",
+        "--eval_data_file=data\\yeast\\yeast_val.txt",
+        "--evaluate_during_training",
+        "--logging_steps",
+        "200",
+        "--block_size",
+        "4608",
+        "--overwrite_output_dir"
+    ],
+    "state": "running",
+    "jobType": null,
+    "mode": "run",
+    "project": "huggingface",
+    "heartbeatAt": "2020-07-03T21:29:27.519813"
+}
