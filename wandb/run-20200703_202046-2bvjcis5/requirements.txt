@@ -4,7 +4,7 @@ attrs==19.3.0
 automat==20.2.0
 backcall==0.2.0
 biopython==1.77
-bleach==3.1.5
+bleach==3.3.0
 blis==0.4.1
 bokeh==2.1.1
 boto3==1.14.13
