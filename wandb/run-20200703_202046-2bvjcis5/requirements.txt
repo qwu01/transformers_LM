@@ -136,7 +136,7 @@ send2trash==1.5.0
 sentencepiece==0.1.91
 sentry-sdk==0.16.0
 service-identity==18.1.0
-setuptools==41.2.0
+setuptools==65.5.1
 shortuuid==1.0.1
 six==1.15.0
 smart-open==2.0.0
